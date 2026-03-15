@@ -39,6 +39,4 @@ public class User implements Comparable<User>{
 	public int compareTo(User other) {
 		return getName().toUpperCase().compareTo(other.getName().toUpperCase());
 	}
-	
-	
 }

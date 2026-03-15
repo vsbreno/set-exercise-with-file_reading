@@ -29,7 +29,8 @@ public class Program {
 				set.add(new User(fields[0], Instant.parse(fields[1])));
 				line = br.readLine();
 			}
-
+			
+			System.out.println("Total users: " + set.size());
 		} 
 		catch (IOException e) {
 			System.out.println(e.getMessage());
@@ -37,14 +38,9 @@ public class Program {
 
 		System.out.println();
 		System.out.println("Input file: ");
-		int sum = 0;
 		for (User user : set) {
 			System.out.println(user);
-			sum++;
 		}
-		
-		System.out.println();
-		System.out.println("Total users: " + sum);
 		
 		scan.close();
 	}
